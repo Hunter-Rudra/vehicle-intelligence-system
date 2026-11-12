@@ -28,6 +28,7 @@ print("Pixel at row 1, column 1:", image[1, 1])
 
 # 4. Extract a region of the image
 region = image[1:3, 1:3]
+print("Region(image[1:3, 1:3]):", "\n", region)
 
 print("""\n#-------------------------------------------------------------------------
 """, "IMAGE REGION", """\n#-------------------------------------------------------------------------
@@ -35,6 +36,7 @@ print("""\n#--------------------------------------------------------------------
 
 # 5. Convert image to floating-point values
 float_image = image.astype(np.float32)
+print("Float_image", float_image)
 
 # Normalize pixel values between 0 and 1
 normalized_image = float_image / 255
@@ -49,7 +51,7 @@ print("Normalized maximum:", normalized_image.max())
 
 # 6. Create a blank RGB image
 rgb_image = np.zeros((4, 4, 3), dtype=np.uint8)
-print("rgb_image:", rgb_image)
+print("rgb_image:","\n", rgb_image)
 
 print("""\n#-------------------------------------------------------------------------
 """, "RGB IMAGE", """\n#-------------------------------------------------------------------------
